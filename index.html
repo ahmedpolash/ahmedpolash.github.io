@@ -63,12 +63,23 @@
   </div>
 </div>
  <script>
-   // Redirect to email address
-    function redirectToEmail() {
-      var emailAddress = "abdullahahmedpolash@gmail.com";
-      window.location.href = "mailto:" + emailAddress;
+    // Function to detect mobile browser
+    function isMobileBrowser() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
-  </script>      
+
+    // Redirect to Gmail or Email
+    function redirectTo() {
+      var emailAddress = "example@example.com";
+      var isMobile = isMobileBrowser();
+
+      if (isMobile) {
+        window.location.href = "mailto:" + emailAddress;
+      } else {
+        window.location.href = "https://mail.google.com";
+      }
+    }
+  </script>    
 <div class="section" id="about">
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-offset="10">
