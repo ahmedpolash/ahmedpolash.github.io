@@ -62,24 +62,7 @@
     </div>
   </div>
 </div>
- <script>
-    // Function to detect mobile browser
-    function isMobileBrowser() {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
-
-    // Redirect to Gmail Compose
-    function redirectToGmailCompose() {
-      var emailAddress = "abdullahahmedpolash@gmail.com";
-      var isMobile = isMobileBrowser();
-
-      if (isMobile) {
-        window.location.href = "googlegmail://co?to=" + emailAddress;
-      } else {
-        window.location.href = "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=" + emailAddress;
-      }
-    }
-  </script>
+ 
 <div class="section" id="about">
   <div class="container">
     <div class="card" data-aos="fade-up" data-aos-offset="10">
